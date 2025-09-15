@@ -1,0 +1,11 @@
+from tkinter import *
+window = Tk()
+label1 = Label(window,text="mail id")
+label2 = Label(window,text="password")
+label1.grid(row=0,column=1)
+label2.grid(row=1,column=1)
+entrybox1=Entry(window)
+entrybox2=Entry(window)
+entrybox1.grid(row=0,column=2)
+entrybox2.grid(row=1,column=2)
+window.mainloop()
