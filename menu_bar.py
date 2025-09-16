@@ -1,0 +1,13 @@
+from tkinter import *
+window = Tk()
+menu = Menu(window)
+file = Menu(menu , tearoff=0)
+file.add_command(label="new")
+file.add_command(label="open")
+file.add_command(label="save")
+file.add_command(label="save as")
+file.add_separator()
+file.add_command(label="exit",command=window.quit)
+menu.add_cascade(label="file",menu=file)
+window.config(menu=menu)
+mainloop()
